@@ -1,37 +1,122 @@
 *{
-    margin: 0;
-    padding:0;
-    font-size:medium;
+    margin: 0%;
+    padding: 0%;
+    font-size: medium;
     font-weight: normal;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: popins, sans-serif;
 }
 
-/* Header styles */
+/* Header Styles */
 #headerContainer > h1 {
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: bold;
-    color: crimson;
+    color:orangered;
+    text-align: center;
 }
 
-#headerContainer > small {
-    font-size: larger;
+#headerContainer > small{
+    font-size: medium;
     font-weight: lighter;
-}
-#headerContainer{
-    margin: 30px;
-    padding: 20px;
-    box-shadow: 1px 3px rgba(0, 0, 0, 5);
-    border-radius: 10px;
-    background-color: white;
-    text-align: center;
-
+    color: rgb(240, 20, 20);
 }
 
-#formContainer{
-    margin: 30px;
+#headerContainer {
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
     padding: 20px;
-    box-shadow: 1px 3px rgba(0, 0, 0, 5);
-    border-radius: 10px;
-    background-color: white;
+    border-radius: 12px;
+    background-color: rgb(0, 0, 0);
     text-align: center;
+    margin: 30px;
+}
+
+#formContainer {
+    box-shadow: 0px 0px 10px 0px rgb(160, 69, 69);
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(89, 117, 117, 0.637);
+    text-align: center;
+    margin: 30px;
+}
+
+#formContainer > #studentForm > .input-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#formContainer > #studentForm > .input-field > label {
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(2, 2, 0);
+    margin-bottom: 5px;
+}
+
+#formContainer > #studentForm > .input-field > input {
+    width: 1780px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 15px;
+}
+
+#formContainer > #studentForm:nth-last-child(1) > button {
+    width: 100%;
+    background-color: rgb(255, 68, 0);
+    color: rgb(231, 228, 228);
+    padding: 100px;
+    border:0ex;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#formContainer button {
+    background-color: rgb(121, 111, 107);
+    color: rgb(231, 228, 228);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#listContainer > .list-item {
+    box-shadow: 0px 0px 10px 0px rgb(158, 24, 24);
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #817777e3;
+    text-align: center;
+    margin: 30px;
+}
+
+#listContainer > .list-item > h2 {
+    font-size: large;
+    font-weight: bold;
+    color: rgb(22, 22, 19);
+}
+
+#listContainer > .list-item > p {
+    font-size: medium;
+    font-weight: lighter;
+    color: rgb(2, 2, 0);
+}
+
+#listContainer > .list-item > button {
+    background-color: rgb(243, 85, 12);
+    color: rgb(32, 27, 27);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#listContainer{
+    display: flex;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+@media (width <= 320px){
+    #listContainer {
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
